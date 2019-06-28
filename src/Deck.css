@@ -1,0 +1,53 @@
+.Deck-cardarea {
+    margin-top: 80px;
+}
+.Deck-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.Deck-subtitle {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+button {
+    background: linear-gradient(to bottom right, #a90202, #ff5f03);
+    outline: none;
+    font: inherit;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: white;
+    text-shadow: 1px 1px black;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+    transition: .5s;
+    box-shadow: 1px 1px 4px 0px black;
+}
+button:hover {
+    border-color: white;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #ff5f03, #a90202);
+}
+
+@media all and (max-width: 425px) {
+    button {
+        position: relative;
+        margin: 0 auto;
+        top: 380px;
+    }
+    button:active {
+        border-color: white;
+        cursor: pointer;
+    }
+    .Deck-cardarea {
+        margin-top: 10px;
+        transform: scale(.7);
+    }
+    .Deck-title {
+        font-size: 20px;
+    }
+    .Deck-subtitle {
+        font-size: 15px;
+    }
+}
